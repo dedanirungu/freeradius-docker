@@ -1,78 +1,82 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-   
-    <title>Logout</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/signin.css" rel="stylesheet">
-    
 
-</script>  
-  </head>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
 
-<body class="text-center">
-<div id="wrap">
-    
+        <title>Logout</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/signin.css" rel="stylesheet">
 
-    <div class="container">
-        <div class="row">
-            $(if error)
-                <div class="alert alert-danger">$(error)</div>
-            $(endif)
 
-            <div class="alert alert-success">Voce foi deslogoado.</div>
-        </div>
+        </script>
+    </head>
 
-        <div class="row">
-            <div class="panel panel-default">
-                <div class="panel-body">
+    <body class="text-center">
+        <div id="wrap">
 
-                    <table class="table table-striped">
-                        <tbody>
-                        <tr>
-                            <td>user name</td>
-                            <td>$(username)</td>
-                        </tr>
-                        <tr>
-                            <td>IP address</td>
-                            <td>$(ip)</td>
-                        </tr>
-                        <tr>
-                            <td>MAC address</td>
-                            <td>$(mac)</td>
-                        </tr>
-                        <tr>
-                            <td>session time</td>
-                            <td>$(uptime)</td>
-                        </tr>
-                        $(if session-time-left)
-                            <tr>
-                                <td>time left</td>
-                                <td>$(session-time-left)</td>
-                            </tr>
-                        $(endif)
-                        <tr>
-                            <td>bytes up/down:</td>
-                            <td>$(bytes-in-nice) / $(bytes-out-nice)</td>
-                        </tr>
-                        </tbody>
-                    </table>
+
+            <div class="container">
+                <div class="row">
+                    $(if error)
+                    <div class="alert alert-danger">$(error)</div>
+                    $(endif)
+
+                    <div class="alert alert-success">
+                        You have been logged out.
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+
+                            <table class="table table-striped">
+                                <tbody>
+                                    <tr>
+                                        <td>user name</td>
+                                        <td>$(username)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>IP address</td>
+                                        <td>$(ip)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>MAC address</td>
+                                        <td>$(mac)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>session time</td>
+                                        <td>$(uptime)</td>
+                                    </tr>
+                                    $(if session-time-left)
+                                    <tr>
+                                        <td>time left</td>
+                                        <td>$(session-time-left)</td>
+                                    </tr>
+                                    $(endif)
+                                    <tr>
+                                        <td>bytes up/down:</td>
+                                        <td>$(bytes-in-nice) / $(bytes-out-nice)</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
             </div>
+
+
         </div>
-    </div>
-  
-
-</div>
 
 
 
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
 
-</body>
+    </body>
+
 </html>
