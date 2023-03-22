@@ -62,6 +62,11 @@ echo "GRANT ALL ON *.* to ispserver@'localhost' IDENTIFIED BY 'ispserver'; " | s
 echo "GRANT ALL ON *.* to ispserver@'%' IDENTIFIED BY 'ispserver'; " | sudo mysql 
 echo "flush privileges;" | sudo mysql 
 
+
+echo "create database newgif;" | sudo mysql 
+echo "create user 'newgif'@'%' identified by '9O2rQStQnWwv5U7K';" | sudo mysql 
+echo "GRANT ALL ON *.* to newgif@'%' IDENTIFIED BY '9O2rQStQnWwv5U7K'; " | sudo mysql 
+echo "flush privileges;" | sudo mysql 
 ```
 
 ## 3. Install Freeradius
